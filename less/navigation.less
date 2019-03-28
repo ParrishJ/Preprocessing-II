@@ -4,17 +4,36 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 2px dashed #D4D4D4;
+    /* border-bottom: 2pt dashed @silver; */
+    
+
+    h1 {
+        padding-top: 10px;
+        padding-left: 235px;
+    
+    }
+
     
     
     .anchors {
         display: flex;
         justify-content: space-between;
+        padding-right: 235px;
+
+        @media @mobile {
+            text-align: center;
+            padding: 0px;
+        }
     }
         
     a {
         padding: 15px;
     }
-}
 
+    
+    @media @mobile {
+        display: block;
+        text-align: center;
+    }
+}
 
