@@ -245,3 +245,11 @@ header p {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .bot-btn {
+  height: 45px;
+  width: 200px;
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 15px;
+  border: 0px;
+}
