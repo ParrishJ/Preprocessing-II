@@ -4,12 +4,11 @@
   border-bottom: 2px dashed @silver;
   
   h1, p {
-    padding-top: 10px;
+    padding: 25px;
   
-    @media @mobile {
+    /* @media @mobile {
       padding: 20px;
-
-  }
+  } */
  
 }
 }
@@ -34,6 +33,7 @@
 
       @media @mobile {
         width: 100%;
+        padding: 25px;
       }
     }
 
@@ -43,6 +43,8 @@
 
       @media @mobile {
         width: 100%;
+        padding: 25px;
+        
       }
 
       img {
@@ -56,6 +58,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      padding: 25px;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -83,12 +89,29 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+      /* align-items: center */
+      padding: 25px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
       
       .bot-btn {
         .new-button();
+      
+        @media @mobile {
+          margin-right: 20px;
+          
+        }
+      
       }
     
     }

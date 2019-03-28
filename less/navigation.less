@@ -4,12 +4,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* border-bottom: 2pt dashed @silver; */
+    border-bottom: 2pt dashed @silver;
     
 
     h1 {
         padding-top: 10px;
         padding-left: 235px;
+
     
     }
 
@@ -21,7 +22,7 @@ nav {
         padding-right: 235px;
 
         @media @mobile {
-            text-align: center;
+           
             padding: 0px;
         }
     }
@@ -32,8 +33,9 @@ nav {
 
     
     @media @mobile {
-        display: block;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        
     }
 }
 
